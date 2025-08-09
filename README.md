@@ -46,6 +46,15 @@ Edit
 # Get all records
 curl -X GET http://localhost:8080/records
 
+#Access the application
+Open your browser:
+
+arduino
+Copy
+Edit
+http://localhost/
+
+
 # Create a record
 curl -X POST http://localhost:8080/records \
      -H "Content-Type: application/json" \
@@ -112,4 +121,3 @@ Copy
 Edit
 java -jar target/demo-0.0.1-SNAPSHOT.jar
 Configure Nginx and serve HTML.
-
