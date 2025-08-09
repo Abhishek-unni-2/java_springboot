@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Records App</title>
+</head>
+<body>
+    <h1>Records</h1>
+    <button onclick="loadRecords()">Load Records</button>
+    <pre id="output"></pre>
+
+    <script>
+        function loadRecords() {
+            fetch("http://localhost:8080/records")
+                .then(res => res.json())
+                .then(data => {
+                    document.getElementById("output").textContent = JSON.stringify(data, null, 2);
+                })
+                .catch(err => console.error(err));
+        }
+    </script>
+</body>
+</html>
+
