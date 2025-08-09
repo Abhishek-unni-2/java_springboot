@@ -47,12 +47,7 @@ Edit
 curl -X GET http://localhost:8080/records
 
 #Access the application
-Open your browser:
-
-arduino
-Copy
-Edit
-http://localhost/
+Open your browser: http://localhost/
 
 
 # Create a record
